@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore student internships by role, skill, category, and work style.">
+  <title>Internships — InternPath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="page-main"><div class="container">
+    <header class="page-heading"><span class="eyebrow">Opportunities for your next step</span><h1>Find an internship</h1><p>Explore student-friendly roles and keep the ones you like in your application tracker.</p></header>
+    <form id="internship-filters" class="filter-panel">
+      <div class="field"><label for="query">Search</label><input id="query" name="q" type="search" placeholder="Try design, React, or a company"></div>
+      <div class="field"><label for="category">Career area</label><select id="category" name="category"><option value="">All areas</option><option>Technology</option><option>Design</option><option>Data</option><option>Marketing</option><option>Business</option></select></div>
+      <div class="field"><label for="location">Work style</label><select id="location" name="location"><option value="">Any work style</option><option>Remote</option><option>Hybrid</option><option>On-site</option></select></div>
+      <button class="button button-primary" type="submit">Search roles <span aria-hidden="true">→</span></button>
+    </form>
+    <p id="results-count" class="results-count" aria-live="polite"></p>
+    <div id="internship-results" class="internship-grid"></div>
+  </div></main>
+  <div id="site-footer"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="../js/main.js"></script><script type="module" src="../js/search.js"></script>
+</body>
+</html>
